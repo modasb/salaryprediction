@@ -6,7 +6,7 @@ import pandas as pd
 Data = pd.read_csv(r'C:\Users\ousse\Downloads\wetransfer_ml-model-deployment-using-flask-main_2024-05-10_1348\ML-MODEL-DEPLOYMENT-USING-FLASK-main\jobs.csv')
 Data.duplicated().sum()
 Data.drop_duplicates(inplace=True)
-Data.drop(['salary', 'work_year'], axis=1, inplace=True)
+Data.drop(['salary','salary_currency', 'work_year'], axis=1, inplace=True)
 
 # %%
 Data
