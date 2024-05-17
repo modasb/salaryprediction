@@ -1,0 +1,333 @@
+
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulateur de salaire</title>
+    <meta name="language" content="fr-FR"/>
+
+
+    <link rel="stylesheet" href="https://www.waage.fr/css/app.css"/>
+
+
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid  content-menu no-border-bottom is-sticky">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <button class="navbar-toggler mr-sm-2 mr-0 collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="d-flex mt-sm-0 mt-3 mb-sm-0 mb-2 flex-column flex-sm-row w-100 align-items-center justify-content-between">
+
+                    <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+
+                        <div class="navbar-nav pb-sm-0 pb-3 font-size-normal">
+                             <a class="nav-item nav-link active" href="{{ url_for('home') }}">Home</a>
+                            <a class="nav-item nav-link " href="{{ url_for('Home') }}">Testez votre salaire</a>
+                            <a class="nav-item nav-link" href="https://app.powerbi.com/groups/me/reports/a88f430f-9c5f-44cd-aa0a-9982e8d5dd2f/ReportSection?experience=power-bi">Statistiques</a>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </nav>
+
+     </div>
+
+</header>
+
+
+
+
+
+<div class="container-fluid mt-sm-4 mt-3 content-employees">
+
+    <div class="container pl-lg-0 pr-lg-0 pb-0">
+
+        <div class="row mt-sm-3 mt-0">
+
+            <div class="col-lg-7 pr-sm-5">
+
+                <h1 class="text-uppercase font-weight-light text-sm-left text-center pt-sm-1 mb-sm-2 mb-3 pt-0 title-test font-weight-bolder text-red-gradient font-size-xlarge"> Explorez votre potentiel salarial </h1>
+
+                <h2 class="text-sm-left text-center font-size-larger mt-2 pt-sm-2 mb-sm-3 mb-2 pb-3 text-light-blue">
+                    Assurez-vous que vous êtes rémunéré(e) à votre juste valeur ! </h2>
+
+            </div> </br> </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+            </div>
+
+
+            <div class="col-12">
+
+                <div class="d-flex flex-column align-align-items-center">
+
+                    <span class="text-center font-size-large font-weight-bold mt-5 pt-5 pb-2"> Simulateur de positionnement marché </span>
+                    <span class="text-center"> De quoi s’agit-il ? </span>
+
+                    <p style="background: #f8f8f8;" class="text-center  line-height-large container-grey p-4 border-radius mt-4 mb-5 px-sm-5 px-3 py-5 pt-2 mb-0 text-dark">
+
+                        Notre plateforme en ligne développée par le cabinet de conseil en rémunération et politique salariale,
+                        qui permet à chaque salarié de calculer son salaire afin de connaître rapidement et en temps réel,
+                        son positionnement salarial par rapport au marché. Ce simulateur de salaire gratuit permet de savoir
+                        comment vous vous situez par rapport à plusieurs marchés de références et si votre employeur vous paie
+                        à votre juste valeur !
+
+                        <br><br>
+
+                    </p>
+
+                </div>
+
+                <div class="d-flex flex-column align-items-center justify-content-sm-start justify-content-center pb-5">
+
+                    <i class="fas fa-rocket text-light-white font-size-xxxlarge"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container pt-4 pb-1">
+
+        <div class="row mt-3 pt-0 pb-1 mb-4">
+
+            <div class="col-lg-6 col-sm-6 col-12 pr-lg-4">
+
+                <div data-sr class="d-sm-flex arg-index d-block mt-sm-2 mt-4 flex-lg-row flex-sm-row flex-column text-center">
+                    <img src="https://www.waage.fr/imgs/icon_check.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary float-md-left mt-sm-2 mt-0 font-weight-bold font-size-xmedium text-lg-left text-sm-left text-center"> Vérifiez si vous êtes bien payé(e)</h3>
+                        <p class="mt-2 text-sm-left font-size-normal float-md-left text-dark-grey">
+                            À tout moment, évaluez votre rémunération et vérifiez si vous êtes payé(e)
+                            à votre juste valeur.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-sr class="d-sm-flex arg-index d-block mt-sm-2 mt-4 flex-lg-row flex-sm-row flex-column text-center">
+                    <img src="https://www.waage.fr/imgs/icon_hands.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary mt-sm-2 mt-0 font-weight-bold font-size-xmedium float-md-left text-lg-left text-sm-left text-center"> Préparez vos prochains entretiens</h3>
+                        <p class="mt-2 text-sm-left font-size-normal text-dark-greye float-md-left">
+                            Préparez votre prochain entretien d’embauche ou d'évaluation en ayant toutes les cartes en main.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-sr class="d-sm-flex arg-index d-block mt-sm-2 mt-4 flex-lg-row flex-sm-row flex-column text-center">
+                    <img src="https://www.waage.fr/imgs/icon_pointers.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary mt-sm-2 mt-0 font-weight-bold font-size-xmedium float-md-left text-lg-left text-sm-left text-center"> Situez où vous pouvez gagner plus </h3>
+                        <p class="mt-2 text-sm-left font-size-normal text-dark-greye float-md-left">
+                            Savoir précisément où et dans quelle entreprise vous pouvez gagner plus.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-12 pl-lg-4">
+
+                <div data-sr class="d-sm-flex arg-index d-block mt-sm-2 mt-4 flex-lg-row flex-sm-row flex-column text-center">
+                    <img src="https://www.waage.fr/imgs/icon_gift.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary mt-sm-2 mt-0 font-weight-bold font-size-xmedium float-md-left text-lg-left text-sm-left text-center"> Négociez efficacement vos avantages</h3>
+                        <p class="mt-2 text-sm-left font-size-normal text-dark-greye float-md-left">
+                            Connaitre les meilleurs avantages proposés par les entreprises du marché.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-sr class="d-sm-flex arg-index d-block text-center mt-2 flex-lg-row flex-sm-row flex-column ">
+                    <img src="https://www.waage.fr/imgs/icon_bell.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary mt-sm-2 mt-0 font-weight-bold font-size-xmedium float-md-left text-lg-left text-sm-left text-center"> Suivez l’évolution de votre secteur</h3>
+                        <p class="mt-2 text-sm-left text-dark-greye font-size-normal float-md-left">
+                            Suivre les pratiques et les tendances en termes de salaires sur votre secteur d’activité.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-sr class="d-sm-flex arg-index d-block mt-sm-2 mt-4 flex-lg-row flex-sm-row flex-column text-center">
+                    <img src="https://www.waage.fr/imgs/icon_goggle.png" class="icon-adv-user icon-adv-employee" alt="">
+                    <div class="flex-row">
+                        <h3 class="text-secondary mt-sm-2 mt-0 font-weight-bold font-size-xmedium float-md-left text-lg-left text-sm-left text-center"> Trouvez un nouvel emploi</h3>
+                        <p class="mt-2 mb-lg-2 text-sm-left font-size-normal text-dark-greye float-md-left">
+                            Vous pourrez bientôt trouver des opportunités professionnelles adaptées à vos envies et à votre salaire.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid ">
+
+    <div class="container pb-4 border-top pt-5 mt-3">
+
+        <h4 class="text-center font-size-large font-weight-bold  mt-3"> Le simulateur de salaire gratuit </h4>
+        <span class="text-center d-block w-100"> Mode d’emploi </span>
+
+        <p style="background: #f8f8f8;" class="text-center  line-height-large container-grey p-4 border-radius mt-4 mb-5 px-sm-5 px-3 py-5 pt-2 mb-0 text-dark">
+
+            Pour obtenir une simulation fiable et complète, il est nécessaire de renseigner le formulaire proposé sur ce site,
+            le plus fidèlement possible.
+            <br /><br />
+
+
+            La première partie est consacrée à vos principales caractéristiques (statut, niveau de formation, anciennetés, etc.)
+            ainsi qu’à celles de votre entreprise / employeur (secteur d’activité, localisation, chiffre d’affaires, nombre de
+            salariés, etc.).
+
+
+            <br /><br />
+            Une fois le formulaire intégralement renseigné, une première page de résultats synthétiques s’affiche et présente
+            notamment, le salaire minimum, le salaire moyen et le salaire maximum proposés par le marché pour la fonction de
+            référence choisie ainsi que le positionnement du salarié, exprimé sous forme de pourcentage.
+
+
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid py-5 container-grey">
+
+    <div class="container-fluid container-grey">
+
+        <div class="container pt-4 pb-5">
+
+
+  <h2 class="text-purple text-uppercase font-weight-light text-center mt-3 pb-0 font-size-xxxlarge "> Évaluer son salaire avec des
+      outils et applications <br /> <span class="font-weight-bold">made in Tunisie</span></h2>
+
+  <div class="content-tiles mt-5">
+
+    <div href="" class="d-flex justify-content-center text-align-center"></div>
+
+    <h4 class="d-flex font-size-large justify-content-center text-align-center text-center text-sm-center mb-3 font-weight-bold">
+        Conception, données et support 100% tunisien </h4>
+
+  </div>
+
+
+  <p class="text-center font-size-medium line-height-large mt-4 pt-4 mb-0 text-dark"> Les outils et l'application ont été conçus
+      et développés par un groupe des ingénieurs TEK'UPERS. L’architecture, l’ergonomie,
+      le design, les algorithmes de calculs, les données salariales ainsi que l’hébergement des solutions sont 100 % tunisien.
+
+    <br /> <br />
+
+    Avec le simulateur salaire, vous êtes sans aucun doute assuré(e) d’utiliser les meilleurs solutions du marché pour calculer,
+      évaluer et positionner son salaire.
+  </p>
+
+
+
+</div>
+    </div>
+
+</div>
+
+
+<footer class="py-sm-5">
+
+    <div class="container container-large pt-5 pb-3">
+
+        <div class="row">
+
+            <div class="col-lg-3 col-sm-6">
+
+
+
+
+
+            </div>
+
+            <div class="col-lg-3 px-sm-4 col-md-6 pt-1">
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container container-large mt-sm-4 pb-3">
+
+        <div class="row pt-xl-2 pt-sm-2 pb-sm-2">
+
+
+            <div class="col-lg-10 px-sm-0 mt-sm-0 mt-3 col-sm-6 col-12">
+                <span class="text-dark font-size-lsmall">
+                    &nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" >Confidentialité et gestion des données</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" >Politique de cookies</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" >Mentions légales</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" target="_blank" >TEK'UPERS</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+                </span>
+            </div>
+
+            <div class="col-lg-2 col-sm-3 py-sm-0 py-3 col-12">
+                <a  target="_blank" class="mr-2 font-size-normal"> <i class="fab fa-twitter"></i> </a>
+                <a  target="_blank" class="mr-2 font-size-normal"> <i class="fab fa-facebook"></i> </a>
+                <a target="_blank" class="mr-2 font-size-normal"> <i class="fab fa-linkedin"></i> </a>
+                <span class="text-dark font-weight-bold font-size-normal"> <a href="javascript:" class="text-light-grey btn-to-top font-size-small mt-1 float-right">Retour en haut <i class="fa fa-arrow-up"></i></a> </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script defer src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://www.waage.fr/js/app.js?v=1958"></script>
+
+
+</body>
+
+</html>
