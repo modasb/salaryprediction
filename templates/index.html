@@ -82,15 +82,144 @@
 </div>
 <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f8f9fa;">
     <form action="{{ url_for('predict')}}" method="post" style="background-color: lightgrey; padding: 20px; border-radius: 8px; width: 100%; max-width: 600px;">
-        <div class="row" style="display: flex; flex-direction: column; align-items: center;">
-            <div class="col-lg-12" style="width: 100%;">
-                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
-                    <label>Titre de la poste <span class="text-red">*</span></label>
-                    <div class="col-lg-7" style="width: 100%;">
-                        <input class="form-control numbers-only double-validation" data-dv-max="55" type="text" name="job_title" placeholder="Titre de la poste" required="required">
-                    </div>
-                </div>
+       <div class="row" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="col-lg-12" style="width: 100%;">
+        <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
+            <label for="job_title">Titre de la poste <span class="text-red">*</span></label>
+            <div class="col-lg-7" style="width: 100%;">
+                <select class="form-control" id="job_title" name="job_title" required="required">
+                    <option value="">Select a job title</option>
+                    <option value="Data DevOps Engineer">Data DevOps Engineer</option>
+                    <option value="Data Architect">Data Architect</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Machine Learning Researcher">Machine Learning Researcher</option>
+                    <option value="Data Engineer">Data Engineer</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Analytics Engineer">Analytics Engineer</option>
+                    <option value="Applied Scientist">Applied Scientist</option>
+                    <option value="BI Developer">BI Developer</option>
+                    <option value="Business Intelligence Engineer">Business Intelligence Engineer</option>
+                    <option value="Research Scientist">Research Scientist</option>
+                    <option value="Research Analyst">Research Analyst</option>
+                    <option value="Research Engineer">Research Engineer</option>
+                    <option value="Data Science Engineer">Data Science Engineer</option>
+                    <option value="Data Quality Analyst">Data Quality Analyst</option>
+                    <option value="Data Product Manager">Data Product Manager</option>
+                    <option value="Machine Learning Scientist">Machine Learning Scientist</option>
+                    <option value="AI Engineer">AI Engineer</option>
+                    <option value="MLOps Engineer">MLOps Engineer</option>
+                    <option value="Deep Learning Engineer">Deep Learning Engineer</option>
+                    <option value="Data Modeler">Data Modeler</option>
+                    <option value="Data Product Owner">Data Product Owner</option>
+                    <option value="Data Science Consultant">Data Science Consultant</option>
+                    <option value="Business Intelligence Analyst">Business Intelligence Analyst</option>
+                    <option value="AI Developer">AI Developer</option>
+                    <option value="Data Manager">Data Manager</option>
+                    <option value="ML Engineer">ML Engineer</option>
+                    <option value="Data Science Director">Data Science Director</option>
+                    <option value="Head of Data">Head of Data</option>
+                    <option value="BI Analyst">BI Analyst</option>
+                    <option value="Data Management Analyst">Data Management Analyst</option>
+                    <option value="Machine Learning Modeler">Machine Learning Modeler</option>
+                    <option value="Data Specialist">Data Specialist</option>
+                    <option value="BI Data Analyst">BI Data Analyst</option>
+                    <option value="Data Integration Engineer">Data Integration Engineer</option>
+                    <option value="Business Intelligence Manager">Business Intelligence Manager</option>
+                    <option value="Data Integration Specialist">Data Integration Specialist</option>
+                    <option value="Data Science Practitioner">Data Science Practitioner</option>
+                    <option value="Business Intelligence Developer">Business Intelligence Developer</option>
+                    <option value="AI Research Engineer">AI Research Engineer</option>
+                    <option value="Data Lead">Data Lead</option>
+                    <option value="Data Management Specialist">Data Management Specialist</option>
+                    <option value="AI Architect">AI Architect</option>
+                    <option value="Data Science Manager">Data Science Manager</option>
+                    <option value="Data Strategist">Data Strategist</option>
+                    <option value="Business Intelligence Specialist">Business Intelligence Specialist</option>
+                    <option value="Machine Learning Infrastructure Engineer">Machine Learning Infrastructure Engineer</option>
+                    <option value="Data Quality Engineer">Data Quality Engineer</option>
+                    <option value="Director of Data Science">Director of Data Science</option>
+                    <option value="Business Data Analyst">Business Data Analyst</option>
+                    <option value="Decision Scientist">Decision Scientist</option>
+                    <option value="Financial Data Analyst">Financial Data Analyst</option>
+                    <option value="Data Strategy Manager">Data Strategy Manager</option>
+                    <option value="Computer Vision Engineer">Computer Vision Engineer</option>
+                    <option value="Data Visualization Specialist">Data Visualization Specialist</option>
+                    <option value="Insight Analyst">Insight Analyst</option>
+                    <option value="Data Visualization Engineer">Data Visualization Engineer</option>
+                    <option value="ETL Developer">ETL Developer</option>
+                    <option value="Data Analytics Manager">Data Analytics Manager</option>
+                    <option value="Azure Data Engineer">Azure Data Engineer</option>
+                    <option value="Data Developer">Data Developer</option>
+                    <option value="Principal Data Scientist">Principal Data Scientist</option>
+                    <option value="Data Science Lead">Data Science Lead</option>
+                    <option value="Staff Data Analyst">Staff Data Analyst</option>
+                    <option value="Data Infrastructure Engineer">Data Infrastructure Engineer</option>
+                    <option value="Machine Learning Software Engineer">Machine Learning Software Engineer</option>
+                    <option value="Machine Learning Operations Engineer">Machine Learning Operations Engineer</option>
+                    <option value="AI Scientist">AI Scientist</option>
+                    <option value="Head of Machine Learning">Head of Machine Learning</option>
+                    <option value="Applied Data Scientist">Applied Data Scientist</option>
+                    <option value="AI Programmer">AI Programmer</option>
+                    <option value="Data Operations Analyst">Data Operations Analyst</option>
+                    <option value="Applied Machine Learning Scientist">Applied Machine Learning Scientist</option>
+                    <option value="Data Analytics Lead">Data Analytics Lead</option>
+                    <option value="Data Operations Engineer">Data Operations Engineer</option>
+                    <option value="Machine Learning Manager">Machine Learning Manager</option>
+                    <option value="Lead Data Scientist">Lead Data Scientist</option>
+                    <option value="Principal Machine Learning Engineer">Principal Machine Learning Engineer</option>
+                    <option value="Principal Data Engineer">Principal Data Engineer</option>
+                    <option value="Power BI Developer">Power BI Developer</option>
+                    <option value="Head of Data Science">Head of Data Science</option>
+                    <option value="Staff Machine Learning Engineer">Staff Machine Learning Engineer</option>
+                    <option value="Staff Data Scientist">Staff Data Scientist</option>
+                    <option value="Consultant Data Engineer">Consultant Data Engineer</option>
+                    <option value="Machine Learning Specialist">Machine Learning Specialist</option>
+                    <option value="Business Intelligence Data Analyst">Business Intelligence Data Analyst</option>
+                    <option value="Data Operations Manager">Data Operations Manager</option>
+                    <option value="Lead Machine Learning Engineer">Lead Machine Learning Engineer</option>
+                    <option value="Managing Director Data Science">Managing Director Data Science</option>
+                    <option value="Data Modeller">Data Modeller</option>
+                    <option value="Finance Data Analyst">Finance Data Analyst</option>
+                    <option value="Software Data Engineer">Software Data Engineer</option>
+                    <option value="Machine Learning Research Engineer">Machine Learning Research Engineer</option>
+                    <option value="Compliance Data Analyst">Compliance Data Analyst</option>
+                    <option value="Data Operations Specialist">Data Operations Specialist</option>
+                    <option value="Cloud Data Engineer">Cloud Data Engineer</option>
+                    <option value="Analytics Engineering Manager">Analytics Engineering Manager</option>
+                    <option value="NLP Engineer">NLP Engineer</option>
+                    <option value="AWS Data Architect">AWS Data Architect</option>
+                    <option value="Product Data Analyst">Product Data Analyst</option>
+                    <option value="Machine Learning Developer">Machine Learning Developer</option>
+                    <option value="Data Visualization Analyst">Data Visualization Analyst</option>
+                    <option value="Autonomous Vehicle Technician">Autonomous Vehicle Technician</option>
+                    <option value="Sales Data Analyst">Sales Data Analyst</option>
+                    <option value="Applied Machine Learning Engineer">Applied Machine Learning Engineer</option>
+                    <option value="ETL Engineer">ETL Engineer</option>
+                    <option value="Big Data Engineer">Big Data Engineer</option>
+                    <option value="Lead Data Analyst">Lead Data Analyst</option>
+                    <option value="BI Data Engineer">BI Data Engineer</option>
+                    <option value="Cloud Database Engineer">Cloud Database Engineer</option>
+                    <option value="Deep Learning Researcher">Deep Learning Researcher</option>
+                    <option value="Data Analytics Specialist">Data Analytics Specialist</option>
+                    <option value="Big Data Architect">Big Data Architect</option>
+                    <option value="Computer Vision Software Engineer">Computer Vision Software Engineer</option>
+                    <option value="Marketing Data Engineer">Marketing Data Engineer</option>
+                    <option value="Manager Data Management">Manager Data Management</option>
+                    <option value="Data Analytics Consultant">Data Analytics Consultant</option>
+                    <option value="Data Science Tech Lead">Data Science Tech Lead</option>
+                    <option value="Data Scientist Lead">Data Scientist Lead</option>
+                    <option value="Marketing Data Analyst">Marketing Data Analyst</option>
+                    <option value="Data Analytics Engineer">Data Analytics Engineer</option>
+                    <option value="Cloud Data Architect">Cloud Data Architect</option>
+                    <option value="Lead Data Engineer">Lead Data Engineer</option>
+                    <option value="Principal Data Analyst">Principal Data Analyst</option>
+                </select>
             </div>
+        </div>
+    </div>
+
+
 
             <div class="col-lg-12" style="width: 100%;">
                 <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
@@ -113,36 +242,102 @@
                 </div>
             </div>
 
-            <div class="col-lg-12" style="width: 100%;">
-                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
-                    <label>Monnaie de salaire <span class="text-red">*</span></label>
-                    <div class="col-lg-7" style="width: 100%;">
-                        <select class="form-control select2-medium" name="salary_currency" required="required">
-                            <option selected="selected" value="">Séléctionnez un choix dans la liste</option>
-                            <option value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="GBP">GBP</option>
-                            <option value="CAD">CAD</option>
-                            <option value="AUD">AUD</option>
-                            <option value="PLN">PLN</option>
-                            <option value="BRL">BRL</option>
-                            <option value="TRY">TRY</option>
-                            <option value="CHF">CHF</option>
-                            <option value="SGD">SGD</option>
-                            <option value="DKK">DKK</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="col-lg-12" style="width: 100%;">
-                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
-                    <label>Résidence <span class="text-red">*</span></label>
-                    <div class="col-lg-7" style="width: 100%;">
-                        <input class="form-control numbers-only double-validation" data-dv-max="55" type="text" name="employee_residence" placeholder="Résidence" required="required">
-                    </div>
-                </div>
-            </div>
+    <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
+        <label>Résidence <span class="text-red">*</span></label>
+        <div class="col-lg-7" style="width: 100%;">
+            <select class="form-control" name="employee_residence" required="required">
+                <option value="" disabled selected>Select Residence</option>
+                 <option value="Germany">Germany</option>
+                 <option value="United States">United States</option>
+                 <option value="United Kingdom">United Kingdom</option>
+                 <option value="Canada">Canada</option>
+                 <option value="Spain">Spain</option>
+                 <option value="Ireland">Ireland</option>
+                 <option value="Poland">Poland</option>
+                 <option value="France">France</option>
+                 <option value="Czech Republic">Czech Republic</option>
+                 <option value="Netherlands">Netherlands</option>
+                 <option value="Pakistan">Pakistan</option>
+                 <option value="Ukraine">Ukraine</option>
+                 <option value="Lithuania">Lithuania</option>
+                 <option value="Portugal">Portugal</option>
+                 <option value="Australia">Australia</option>
+                 <option value="Uganda">Uganda</option>
+                 <option value="Colombia">Colombia</option>
+                 <option value="Italy">Italy</option>
+                 <option value="Slovenia">Slovenia</option>
+                 <option value="Romania">Romania</option>
+                 <option value="Greece">Greece</option>
+                 <option value="India">India</option>
+                 <option value="Latvia">Latvia</option>
+                 <option value="Mauritius">Mauritius</option>
+                 <option value="Armenia">Armenia</option>
+                 <option value="Croatia">Croatia</option>
+                 <option value="Thailand">Thailand</option>
+                 <option value="South Korea">South Korea</option>
+                 <option value="Estonia">Estonia</option>
+                 <option value="Turkey">Turkey</option>
+                 <option value="Philippines">Philippines</option>
+                 <option value="Brazil">Brazil</option>
+                 <option value="Qatar">Qatar</option>
+                 <option value="Russia">Russia</option>
+                 <option value="Kenya">Kenya</option>
+                 <option value="Tunisia">Tunisia</option>
+                 <option value="Ghana">Ghana</option>
+                 <option value="Belgium">Belgium</option>
+                 <option value="Switzerland">Switzerland</option>
+                 <option value="Andorra">Andorra</option>
+                 <option value="Ecuador">Ecuador</option>
+                 <option value="Peru">Peru</option>
+                 <option value="Mexico">Mexico</option>
+                 <option value="Moldova">Moldova</option>
+                 <option value="Nigeria">Nigeria</option>
+                 <option value="Saudi Arabia">Saudi Arabia</option>
+                 <option value="Argentina">Argentina</option>
+                 <option value="Egypt">Egypt</option>
+                 <option value="Uzbekistan">Uzbekistan</option>
+                 <option value="Georgia">Georgia</option>
+                 <option value="Central African Republic">Central African Republic</option>
+                 <option value="Finland">Finland</option>
+                 <option value="Austria">Austria</option>
+                 <option value="Singapore">Singapore</option>
+                 <option value="Sweden">Sweden</option>
+                 <option value="Kuwait">Kuwait</option>
+                 <option value="Cyprus">Cyprus</option>
+                 <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                 <option value="Iran">Iran</option>
+                 <option value="American Samoa">American Samoa</option>
+                 <option value="China">China</option>
+                 <option value="Costa Rica">Costa Rica</option>
+                 <option value="Chile">Chile</option>
+                 <option value="Puerto Rico">Puerto Rico</option>
+                 <option value="Denmark">Denmark</option>
+                 <option value="Bolivia">Bolivia</option>
+                 <option value="Dominican Republic">Dominican Republic</option>
+                 <option value="Indonesia">Indonesia</option>
+                 <option value="United Arab Emirates">United Arab Emirates</option>
+                 <option value="Malaysia">Malaysia</option>
+                 <option value="Japan">Japan</option>
+                 <option value="Honduras">Honduras</option>
+                 <option value="Algeria">Algeria</option>
+                 <option value="Vietnam">Vietnam</option>
+                 <option value="Iraq">Iraq</option>
+                 <option value="Bulgaria">Bulgaria</option>
+                 <option value="Jersey">Jersey</option>
+                 <option value="Serbia">Serbia</option>
+                 <option value="New Zealand">New Zealand</option>
+                 <option value="Hong Kong">Hong Kong</option>
+                 <option value="Luxembourg">Luxembourg</option>
+                 <option value="Malta">Malta</option>
+                <option value="Malta">Malta</option>
+            </select>
+        </div>
+    </div>
+</div>
+
 
             <div class="col-lg-12" style="width: 100%;">
                 <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
@@ -188,14 +383,87 @@
                 </div>
             </div>
 
-            <div class="col-lg-12" style="width: 100%;">
-                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
-                    <label>Emplacement de l'entreprise <span class="text-red">*</span></label>
-                    <div class="col-lg-7" style="width: 100%;">
-                        <input class="form-control numbers-only double-validation" data-dv-max="55" type="text" name="company_location" placeholder="Emplacement de l'entreprise" required="required">
-                    </div>
-                </div>
-            </div>
+           <div class="col-lg-12" style="width: 100%;">
+    <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
+        <label>Emplacement de l'entreprise <span class="text-red">*</span></label>
+        <div class="col-lg-7" style="width: 100%;">
+            <select class="form-control" name="company_location" required="required">
+                <option value="">Select Location</option>
+                <option value="Germany">Germany</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Spain">Spain</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Poland">Poland</option>
+                <option value="France">France</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Australia">Australia</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Romania">Romania</option>
+                <option value="Greece">Greece</option>
+                <option value="India">India</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Russia">Russia</option>
+                <option value="Italy">Italy</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Israel">Israel</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Japan">Japan</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Finland">Finland</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Iran">Iran</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Austria">Austria</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Iraq">Iraq</option>
+                <option value="China">China</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Moldova">Moldova</option>
+                 <option value="Malta">Malta</option>
+                <option value="Malta">Malta</option>
+            </select>
+        </div>
+    </div>
+</div>
+
 
             <div class="col-lg-12" style="width: 100%;">
                 <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
